@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Splash Screen For Doggo </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+
+<!--- <div fxLayout="row" fxLayoutAlign="center start">
+ <div fxFlex.gt-md="95" fxFlex.gt-sm="100" fxFlex="100">
+ -->
+  <mat-card class="mat-card-top">
+    <div class = "app-splash-screen" 
+        [ngStyle] =  "
+           {left: windowWidth, 
+            opacity: opacityChange,
+            transition: splashTransition
+        }" *ngIf="showSplash" >
+        <div class = "app-splash-screen-inner">
+            <div class = "app-logo">
+                <span class="material-icons-outlined">
+                   
+                </span>
+         </div>
+            <div class = "app-label">  </div>
+            <div class = "app-name"> <h1> DOGGO </h1> </div>
+            <div class = "app-loader"> </div>
+        </div>
+        <!-- 
+        <div class = "Continue-Button-container">
+            <mat-card-actions>
+               <button mat-raised-button (click) = "goToStartPage()">  Continue </button> Find a way to convert button to angular form
+             </mat-card-actions>
+        </div> -->
+    </div>
+  
+
+</mat-card>
+</html>

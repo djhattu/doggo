@@ -1,0 +1,40 @@
+
+<div fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex.gt-md="95" fxFlex.gt-sm="100" fxFlex="100">
+      <mat-card class="mat-card-top  home-background white-text card-header">
+        <mat-card-header>
+          <h1> What is the smartest breed of dog on the earth? </h1>
+        
+        </mat-card-header>
+          <img mat-card-image src="https://scx2.b-cdn.net/gfx/news/2017/laikaaformer.jpg"
+                alt="imageofprehistoricGoldenRetriever" width="75%" height="10%">
+          <figcaption>
+            (Image of <em>Laika </em>, the first dog ever to roam in space)
+          </figcaption>
+        <mat-card-actions >
+            <label id="example-radio-group-label">Your Answer: {{userAnswer}}</label>
+            <mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="userAnswer" class="example-radio-group">
+                <mat-radio-button class="example-radio-button" value ="Akita">
+                    a. Akita 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value ="Doberman">
+                    b. Doberman 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Australian Shepherd ">
+                    c. Australian Shepherd  
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Border Collie">
+                    d. Border Collie
+                </mat-radio-button>
+            </mat-radio-group>
+          
+          <button mat-raised-button color="warn" (click)="goToPage5()">NEXT</button> 
+     
+    
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
+
+
+

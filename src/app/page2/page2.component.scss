@@ -1,0 +1,124 @@
+:host {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -5px;
+  }
+  
+:host {
+  
+    .mat-sidenav,
+    .mat-drawer-content {
+        padding: 0;
+        overflow-x: hidden;
+}
+  
+md-toolbar+hr,
+    md-card-content+hr {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+::ng-deep .mat-radio-button .mat-radio-inner-circle {
+    background-color: rgb(251, 251, 255)!important;   /*inner circle color change*/
+}
+
+::ng-deep .mat-radio-button .mat-radio-checked .mat-radio-outer-circle {
+    border-color:blue!important; /*outer ring color change*/
+}
+  
+$mat-toolbar-height-desktop: 64px !default;
+$mat-toolbar-height-mobile-portrait: 56px !default;
+$mat-toolbar-height-mobile-landscape: 48px !default;
+
+.mat-card-top {
+    margin-top: -($mat-toolbar-height-desktop);
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+
+table {
+    width: 100%;
+}
+
+.example-button-row button,
+.example-button-row a {
+    margin-right: 10px;
+}
+  
+.mat-footer-row,
+.mat-header-row,
+.mat-row {
+    display: inline-flex;
+    min-width: 100%;
+}
+
+input:disabled {
+    color: black;
+}
+
+select:disabled {
+    color: black;
+}
+
+.mat-slide-toggle:disabled {
+    color: black;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.custom-toolbar {
+    background-color: #FFFFFF;
+    padding: 0 0px;
+}
+
+.custom-toolbar-dark {
+    background-color: #424242;
+    padding: 0 0px;
+}
+
+.home-background {
+    background-color: #1b262b; 
+    text-decoration-color: #e4f0ec;
+}
+
+.card-header{
+    text-align: center !important;
+}
+    
+.white-text {
+    color: rgb(248, 244, 244) !important;
+    text-align: center !important;
+} 
+
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+}
+    
+.example-radio-button {
+    margin: 5px;
+}
+#audio-button {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr;
+    background-color: white;
+    color: red;
+    border: 1px solid blue;
+  }
+#countdown {
+    display: inline;
+    float: right;
+    background-color: red;
+    color: white;
+    text-indent: 2;
+
+
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Doggo - All about dogs</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript">
+      // Wait for device API libraries to load
+      function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+      }
+      
+      // device APIs are available
+      function onDeviceReady() {
+        // Now safe to use device APIs
+        document.addEventListener("backbutton", function(e) {
+          e.preventDefault();
+        }, false);
+      }
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <app-root></app-root>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<div fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex.gt-md="95" fxFlex.gt-sm="100" fxFlex="100">
+      <mat-card class="mat-card-top  home-background white-text card-header">
+        <mat-card-header>
+          <h1> What is the name of this dog breed? </h1>
+        
+        </mat-card-header>
+          <img mat-card-image src="https://www.akc.org/wp-content/uploads/2017/11/Poodle-Standard-Gray-On-White-Standing.jpg" alt = "PoodleImage" 
+             width = "50%" height = "60%">
+      
+        <mat-card-actions>
+            <label id="example-radio-group-label">Your Answer: {{userAnswer}}</label>
+            <mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="userAnswer" class="example-radio-group">
+                <mat-radio-button class="example-radio-button" value ="Labrador"  >
+                    a. Labrador  
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value ="Poodle">
+                    b. Poodle 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Yorkshire Terrier">
+                    c. Yorkshire Terrier 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Yorkshire Terrier">
+                    d. Yorkshire Terrier 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Afghan water hound">
+                    e. Afghan water hound 
+                </mat-radio-button>
+            </mat-radio-group>
+          <p id = 'timer'> {{data}} {{message}} </p>
+          
+          <button mat-raised-button color="warn"  (click)="goToPage3()">NEXT</button> 
+          <script>
+            function play() {
+                var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3');
+                audio.play();
+              }
+            </script>
+            <button onclick = "play();">PLAY MY AUDIO</button>
+           
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
+

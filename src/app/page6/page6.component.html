@@ -1,0 +1,35 @@
+<div fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex.gt-md="95" fxFlex.gt-sm="100" fxFlex="100">
+      <mat-card class="mat-card-top  home-background white-text card-header">
+        <mat-card-header>
+          <h1 style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">  What breed of dog is Bailey in his second life?  </h1>
+        
+        </mat-card-header>
+          <img mat-card-image src="https://variety.com/wp-content/uploads/2017/01/dogs-purpose.jpg" 
+                   alt="OldCanadiandogimage" width="75%" height="250">
+        <mat-card-actions >
+            <label id="example-radio-group-label">Your Answer: {{userAnswer}}</label>
+            <mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="userAnswer" class="example-radio-group">
+                <mat-radio-button class="example-radio-button" value ="German Shepherd">
+                    a.  German Shepherd
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value ="Golden Retriever">
+                     b. Golden Retriever 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Corgi">
+                     c. Corgi
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "St. Bernard">
+                     d. St. Bernard
+                </mat-radio-button>
+            </mat-radio-group>
+          
+          <button mat-raised-button color="warn"  (click)="goToCalculate()">NEXT</button> 
+        <!--  <button mat-raised-button color="primary"  (click)="goToPage4()">BACK</button>  -->
+    
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
+
+

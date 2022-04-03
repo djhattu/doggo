@@ -1,0 +1,36 @@
+
+<div fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex.gt-md="95" fxFlex.gt-sm="100" fxFlex="100">
+      <mat-card class="mat-card-top  home-background white-text card-header">
+        <mat-card-header>
+          <h1> Which country does the Golden Retriever originate from? </h1>
+        
+        </mat-card-header>
+          <img mat-card-image src="https://www.akc.org/wp-content/uploads/2020/07/GoldenRtrvr_BreedStandards_001.jpg" 
+                alt="imageofprehistoricGoldenRetriever" width="75%" height="25%">
+      
+        <mat-card-actions >
+            <label id="example-radio-group-label">Your Answer: {{userAnswer}}</label>
+            <mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="userAnswer" class="example-radio-group">
+                <mat-radio-button class="example-radio-button" value ="Ireland">
+                    a. Ireland 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value ="Canada">
+                    b. Canada 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Scotland">
+                    c. Scotland 
+                </mat-radio-button>
+                <mat-radio-button class="example-radio-button" value = "Australia">
+                    d. Australia
+                </mat-radio-button>
+            </mat-radio-group>
+          
+          <button mat-raised-button color="warn"  (click)="goToPage4()">NEXT</button> 
+        <!--  <button mat-raised-button color="primary"  (click)="goToPage2()">BACK</button> -->
+    
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
+
