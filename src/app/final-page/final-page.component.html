@@ -3,7 +3,8 @@
       <mat-card class="mat-card-top  home-background white-text card-header">
         <mat-card-header>
           <h1>You finished! Fantastic</h1>
-  
+          <h2> Bye {{this.userName}}</h2>
+          <h2> Total Score:  {{this.totalScore}}<</h2>
         </mat-card-header>
         <mat-card-actions class="white-text" fxLayoutAlign="left start">
             <mat-list  >
@@ -13,9 +14,7 @@
 
             
               </mat-list>
-              <mat-list-item [(ngModel)] = "userName">
-                <span class="white-text"> Bye {{this.userName}}</span>
-              </mat-list-item>
+           
         </mat-card-actions>
         <button mat-raised-button color="warn"  (click)="goBackToHome()">HOME</button> 
         <div class = "fireworks">

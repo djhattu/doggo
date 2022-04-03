@@ -59,11 +59,10 @@ export class HomepageComponent implements OnInit {
 
   askName() {
     //promptedName = document.getElementById('textBox');
-    this.userName = "Kanwar";
     const newName = this.userName;
-    // this.calService.addUserName(newName);
+     this.calService.addUserName(newName);
     var message = "Hello";
-    const totalMessage = alert(message + ' ' + newName);
+    alert(message + ' ' + newName);
 
   }
   

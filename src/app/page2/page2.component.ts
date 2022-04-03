@@ -59,7 +59,6 @@ constructor(private router:Router, private calService:CalculateScoreService) {
 
       } else {
         var correctMessage = 'Ruff Ruff. Fantastic';
-        this.calService.setTotalAnswers();
       }
       this.router.navigate(['page3']);
     }else{

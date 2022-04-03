@@ -15,6 +15,7 @@ export class FinalPageComponent  implements OnInit {
   userName: string  = '';
   userAnswer: Answer[] = [];
   correctAnswer: Answer[] = [];
+  totalScore: number = 0;
 
   constructor(private router:Router, private calService:CalculateScoreService) { }
  
@@ -23,16 +24,8 @@ export class FinalPageComponent  implements OnInit {
 
    
     this.answers = this.calService.getAnswers();
-
- 
-      if(this.calService.getAnswers()){
-      this.calService.getAnswers().forEach( (element) => {
-         document.write( "page #" + element.pageNumber + " element user answer: " + element.userAnswer + " correct answer: "  + element.correctAnswer  )
- 
-        });
-        //document.write(this.userName);
-      
-     }
+    this.userName = this.calService.userName;
+    this.totalScore = this.calService.getTotalScore();
   
   }
 

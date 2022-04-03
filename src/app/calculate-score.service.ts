@@ -13,7 +13,7 @@ export class CalculateScoreService {
 
   answers: Answer[] = [];
   userName: string = '';
-  totalScore:number = 5;
+  totalScore:number = 0;
   inCorrectAnswer:number = 0;
   correctAnswer: Answer[] = [];
   totalAnswers: number = 0;
@@ -30,6 +30,16 @@ export class CalculateScoreService {
   
   addAnswer(answer:Answer){
     this.answers.push(answer);
+    if(answer.correctAnswer == answer.userAnswer){
+      this.totalScore++;
+    }
+  }
+  addUserName(name:string) {
+    this.userName = name;
+  }
+
+  getTotalScore(){
+    return this.totalScore;
   }
 
   clearAnswer() {
@@ -42,13 +52,6 @@ export class CalculateScoreService {
     return this.answers;
   }
   
-  getTotalAnswers() {
-    return this.totalAnswers;
-  }
-  
-  setTotalAnswers() {
-    this.totalAnswers = this.totalAnswers + 1;
-  }
   correctAnswers() {
     return this.correctAnswer;
   }
