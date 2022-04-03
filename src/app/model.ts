@@ -5,7 +5,6 @@ export class Answer {
   answers:number = 0;
 
 
-
 }
 
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import { CalculateScoreService } from '../calculate-score.service';
 import { Answer } from '../model';
-import { User } from '../model';
+
 
 @Component({
   selector: 'app-final-page',
@@ -23,7 +23,7 @@ export class FinalPageComponent  implements OnInit {
 
    
     this.answers = this.calService.getAnswers();
-    this.userName = this.calService.getUser();
+
  
       if(this.calService.getAnswers()){
       this.calService.getAnswers().forEach( (element) => {
@@ -39,9 +39,7 @@ export class FinalPageComponent  implements OnInit {
   
  
   goBackToHome() {
-    let user = new User();
-      user.userName = this.userName;
-      alert(user.userName);
+  
       this.calService.clearAnswer();
       this.router.navigate(['homePage']);
     } 
