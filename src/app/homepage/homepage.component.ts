@@ -38,7 +38,7 @@ export class HomepageComponent implements OnInit {
   constructor(private router:Router, private calService:CalculateScoreService) { }
 
   ngOnInit(): void {
-
+ 
   }
   /*let answer = new Answer();
   answer.pageNumber = '1';
@@ -55,19 +55,25 @@ export class HomepageComponent implements OnInit {
   goToPageOne(){
     //this.router.navigate(['splash-screen']);
     this.router.navigate(['page2']);
+    
+
   }
 
   askName() {
     //promptedName = document.getElementById('textBox');
-    const newName = this.userName;
-     this.calService.addUserName(newName);
+    //const newName = this.userName;
+     //this.calService.addUserName(newName);
     var message = "Hello";
-    alert(message + ' ' + newName);
+    alert(message);
+  }
 
+  newLocation() {
+    this.router.navigate(['InfoPage.html']);;
   }
   
  
   goToSocials() {
     //location.href = "url";
   }
+  
 }

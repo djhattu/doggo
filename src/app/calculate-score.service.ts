@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { MatTabHeader } from '@angular/material/tabs';
 import { Answer } from './model';
 
 
@@ -12,12 +13,14 @@ export class CalculateScoreService {
 
 
   answers: Answer[] = [];
-  userName: string = '';
+  pages: Answer[] = [];
+  pageNumber:string = '';
   totalScore:number = 0;
-  inCorrectAnswer:number = 0;
   correctAnswer: Answer[] = [];
   totalAnswers: number = 0;
-
+  firstPage: number = 2;
+  lastPage: number = 5;
+  
   // correctAnswer:Answers[] = ['Poodle', 'Scotland', 'Border Collie', 'Labrador', 'German Shepherd'];
 
   constructor() {
@@ -30,13 +33,15 @@ export class CalculateScoreService {
   
   addAnswer(answer:Answer){
     this.answers.push(answer);
-    if(answer.correctAnswer == answer.userAnswer){
-      this.totalScore++;
+    if(answer.userAnswer === answer.correctAnswer){
+      this.totalScore = this.totalScore + 1;
+    } 
+    if(answer.userAnswer === 'N/A') {
+      this.totalScore-=0; 
     }
+    
   }
-  addUserName(name:string) {
-    this.userName = name;
-  }
+
 
   getTotalScore(){
     return this.totalScore;
@@ -47,7 +52,6 @@ export class CalculateScoreService {
     return this.answers;
   }
 
-
   getAnswers() {
     return this.answers;
   }
@@ -56,10 +60,12 @@ export class CalculateScoreService {
     return this.correctAnswer;
   }
 
+ 
 
-  
-
+  randomizePage() {
+    return this.pages;
   }
+}
 
 
   

@@ -8,7 +8,6 @@
         </mat-card-header>
           <img mat-card-image src="https://www.akc.org/wp-content/uploads/2020/07/GoldenRtrvr_BreedStandards_001.jpg" 
                 alt="imageofprehistoricGoldenRetriever" width="75%" height="25%">
-      
         <mat-card-actions >
             <label id="example-radio-group-label">Your Answer: {{userAnswer}}</label>
             <mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="userAnswer" class="example-radio-group">
@@ -24,8 +23,7 @@
                 <mat-radio-button class="example-radio-button" value = "Australia">
                     d. Australia
                 </mat-radio-button>
-            </mat-radio-group>
-          
+              </mat-radio-group>
           <button mat-raised-button color="warn"  (click)="goToPage4()">NEXT</button> 
         <!--  <button mat-raised-button color="primary"  (click)="goToPage2()">BACK</button> -->
     

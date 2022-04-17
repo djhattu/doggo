@@ -15,7 +15,7 @@ import { AnotherpageComponent} from './anotherpage/anotherpage.component';
 import { FinalPageComponent } from './final-page/final-page.component';
 import { SplashScreenComponent} from './splash-screen/splash-screen.component'
 import {CommonModule, LocationStrategy,HashLocationStrategy } from '@angular/common';
-
+import { IntroduceUserComponent } from './introduce-user/introduce-user.component';
 const routes: Routes = [
   {
     path: '',
@@ -23,6 +23,11 @@ const routes: Routes = [
     pathMatch: 'full'
   }
   ,
+  {
+    path: 'introduce-user',
+    component: IntroduceUserComponent
+  },
+
   {
     path:'page2',
       component:Page2Component

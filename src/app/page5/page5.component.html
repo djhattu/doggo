@@ -6,8 +6,8 @@
           <h1>  Which breeds of dog originate from Canada?  </h1>
         
         </mat-card-header>
-          <img mat-card-image src="assets/images/canadianDog.jpg" 
-                   alt="OldCanadiandogimage" width="75%" height="250">
+          <img mat-card-image src= "https://i.pinimg.com/originals/99/d3/2f/99d32f42dc7c3a725a4ac89a7e277597.jpg"
+           alt="OldCanadiandogimage" width="75%" height="250">           
         <mat-card-actions >
             <label id="example-radio-group-label">Your Answer: {{userAnswer}}</label>
             <mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="userAnswer" class="example-radio-group">
@@ -24,7 +24,9 @@
                     d. Husky
                 </mat-radio-button>
             </mat-radio-group>
-          
+          <div id = "timer-container">
+            <p id = "timer"> {{data}} </p>
+        </div>
           <button mat-raised-button color="warn"  (click)="goToPage6()">NEXT</button>
     
         </mat-card-actions>

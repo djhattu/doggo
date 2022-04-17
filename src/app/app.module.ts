@@ -55,6 +55,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { NewComponent } from './new/new.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { AnimationComponent } from './animation/animation.component';
+import { IntroduceUserComponent } from './introduce-user/introduce-user.component';
+
 
 
 
@@ -115,6 +117,8 @@ const mm = [
     NewComponent,
     SplashScreenComponent,
     AnimationComponent,
+    IntroduceUserComponent,
+ 
 
   ],
   imports: [

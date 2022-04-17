@@ -38,6 +38,7 @@ constructor(private router:Router, private calService:CalculateScoreService) {
         this.data = 0;
         this.message = "TIME'S UP!";
         this.userAnswer = 'N/A';
+
       }
     })
   }

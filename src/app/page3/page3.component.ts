@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {CalculateScoreService} from '../calculate-score.service'
 import { Answer } from '../model';
-
+import { interval } from 'rxjs';
+import { MatCard } from '@angular/material/card';
 
 @Component({
   selector: 'app-page3',
@@ -16,12 +17,23 @@ export class Page3Component implements OnInit {
   correctAnswer:string = 'Scotland';
   userAnswer:string = '';
   totalScore:number = 5;
-
+  data: number = 0; 
+  message:string = '';
   constructor(private router:Router, private calService:CalculateScoreService) { 
     this.radioButtonClicked = false;
   }
 
   ngOnInit(): void {
+    const obs$ = interval(1000);
+    obs$.subscribe((d) => {
+      //console.log(d);
+      this.data = d;
+      if(this.data >= 10) {
+        this.data = 0;
+        this.message = "TIME'S UP!";
+        this.userAnswer = 'N/A';
+      }
+    })
   }
 
 

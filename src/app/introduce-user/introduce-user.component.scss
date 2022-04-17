@@ -19,14 +19,11 @@ md-toolbar+hr,
     }
 }
 
-#timer {
-    color: white;
-}
 ::ng-deep .mat-radio-button .mat-radio-inner-circle {
     background-color: rgb(251, 251, 255)!important;   /*inner circle color change*/
 }
 
-::ng-deep.mat-radio-button.mat-radio-checked .mat-radio-outer-circle {
+::ng-deep .mat-radio-button .mat-radio-checked .mat-radio-outer-circle {
     border-color:blue!important; /*outer ring color change*/
 }
   
@@ -108,3 +105,24 @@ select:disabled {
 .example-radio-button {
     margin: 5px;
 }
+#audio-button {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr;
+    background-color: white;
+    color: red;
+    border: 1px solid blue;
+  }
+#countdown {
+    display: inline;
+    float: right;
+    background-color: red;
+    color: white;
+    text-indent: 2;
+}
+button mat-raised-button {
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+

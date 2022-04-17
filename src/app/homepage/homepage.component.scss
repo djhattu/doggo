@@ -129,12 +129,21 @@ display: block;
 #first-image {
     display: inline;
     float: left;
-    animation: rotation 2s infinite linear;
+    margin-bottom: 10%;
+    animation: rotation 2s infinite linear
 }
 #second-image{
     display: inline;
     float: right;
     animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 #third-image {
     display: block;

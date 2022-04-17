@@ -3,6 +3,7 @@ export class Answer {
   correctAnswer: string ='';
   userAnswer:string='';
   answers:number = 0;
+  pages:number = 0;
 
 
 }

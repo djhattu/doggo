@@ -106,10 +106,23 @@ select:disabled {
 .example-radio-button {
     margin: 5px;
 }
+
+.mat-card-main #totalScore {
+    display: inline; 
+    float: left;
+    position: absolute;
+}
+#totalScore {
+    background-color: white;
+    color: rgba(50,50,50,0.5);
+    border: 1px solid red;
+    border-radius: 1000px;
+}
+
 .fireworks {
     display: inline;
 }
-
+/*
 #firework-two {
     float: right;
     position: relative;
@@ -121,4 +134,5 @@ select:disabled {
     right: 80%;
     bottom: 90%;
     transform: translateQY(-100px);
-}
+}*
+*/

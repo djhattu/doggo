@@ -2,6 +2,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { SplashAnimationType } from './splash-animation-type';
+import { CalculateScoreService } from '../calculate-score.service';
 
 @Component({
   selector: 'app-splash-screen',

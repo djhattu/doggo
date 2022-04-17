@@ -24,7 +24,6 @@ export class FinalPageComponent  implements OnInit {
 
    
     this.answers = this.calService.getAnswers();
-    this.userName = this.calService.userName;
     this.totalScore = this.calService.getTotalScore();
   
   }
